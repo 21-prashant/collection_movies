@@ -1,0 +1,112 @@
+html,body {
+    height: 100%;
+}
+
+#homepage-responsive-image {
+  width: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -110px;
+}
+
+#push {
+  height: 105px;
+}
+
+#footer {
+  height: 92px;
+}
+
+@media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
+.adjust-left {
+  padding-right: 5%;
+}
+
+.movie-select {
+  padding: 10px 15px 0px 20px;
+  border-radius: 15px;
+  background-color: darkslategray;
+  margin: 5px;
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.movie-select.selected {
+  background-color: slategray;
+}
+
+.clearfix {
+  float: none !important;
+}
+
+#results {
+  max-height: 500px;
+  overflow-y: scroll; 
+}
+
+dl {
+ width:100%;
+ overflow:hidden;
+}
+dt {
+ float:left;
+ width:50%; /* adjust the width; make sure the total of both is 100% */
+}
+dd {
+ float:left;
+ width:50%; /* adjust the width; make sure the total of both is 100% */
+
+}
+
+.rating-text {
+  margin: 0 auto;
+  width: 20px;
+  color: gold;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  width: 20px;
+  margin: 0 auto;
+}
+.rating > span.rated:before,
+.rating > span.rated ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
+
+#lib_paginate {
+  /*margin-top: -20px;*/
+}
+
+span.vert{
+  font-size: 22px;
+}
+
+@media (max-width: 568px) { 
+  span.vert {
+    display: inline-block;
+  }
+  .rating {
+    width: 90%;
+    display: inline-block;
+  }
+  .rating-text{
+    display: inline-block;
+  }
+}
